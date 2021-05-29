@@ -2,7 +2,7 @@
 
 <h1 align="center">RoboFriends + Hooks</h1>
 
-Update to the original [RoboFriends Repo](https://github.com/rbhachu/robofriends) , with React Hooks.
+Update to the original [RoboFriends Repo](https://github.com/rbhachu/robofriends), with React Hooks.
 
 ## Instructions
   - Clone Repo to your local machine.<br>
