@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardsList from '../components/CardsList';
 import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll'; 
 import ErrorBoundary from '../components/ErrorBoundary'; // error checker
-//import { robots } from '../components/robots'; //using api instead
-import '../css/RobotApp.css';
 
 function App() {
 
@@ -29,19 +26,29 @@ const [searchfield, setSearchfield] = useState('') // initial state starts empty
     })
     //console.log(robots, searchfield) // show current states
 
-    return !robots.length ? // check if list is talking time to load, display message 'loading'
-        <h1>Loading...</h1> :
-            (
-            <div className='tc'>
-                <h1 className='f1'>RoboFriends</h1>
-                <SearchBox searchChange={onSearchChange}/>
-                <Scroll>
-                    <ErrorBoundary>
-                        <CardsList robots={filteredRobots} /> 
-                    </ErrorBoundary>
-                </Scroll>
-            </div>
-            );
+    return (
+        <>
+            { !robots.length ? 
+                <div className='tc'>
+                    <header>
+                        <h1 className='f1 fw2 light-blue'>Loading...</h1>
+                    </header>
+                </div>
+            :
+                <div className='tc'>
+                    <header>
+                        <h1 className='f1 fw2 light-blue'>RoboFriends</h1>
+                    </header>
+                    <section>
+                        <SearchBox searchChange={onSearchChange}/>
+                        <ErrorBoundary>
+                            <CardsList robots={filteredRobots} /> 
+                        </ErrorBoundary>
+                    </section>
+                </div>
+            }
+        </>
+    )
 }
 
 export default App;

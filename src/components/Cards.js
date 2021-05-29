@@ -1,31 +1,16 @@
 import React from 'react';
 
-/*
-const Cards = (props) => {
-    return(
-        <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img alt={`${props.id} - ${props.name}`}  title={`${props.id} - ${props.name}`} src={`https://robohash.org/${props.id}?200x200`} />
-                <div>
-                    <h2>{props.name}</h2>
-                    <p>{props.email}</p>
-                </div>
-        </div>
-    )
-}
-*/
-
 //deconstructed using props constant
 const Cards = ({ id, name, email }) => { // avoids adding props.x to all vars
     return(
-        <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img alt={`${id} - ${name}`}  title={`${id} - ${name}`} src={`https://robohash.org/${id}?200x200`} />
+        <div className='tc bg-light-blue dib br3 pa3 ma2 grow bw2 shadow-5'>
+            <img className="br-100  dib ba b--black-05 bg-dark-blue" src={`https://robohash.org/${id}?size=200x200`} width="200" height="200" alt={name} title={name} />
                 <div>
-                    <h2>{name}</h2>
-                    <p>{email}</p>
+                    <h2 className='f4 b helvetica black'>{name}</h2>
+                    <p className="f6 underline helvetica black">{email}</p>
                 </div>
         </div>
     )
 }
-
 
 export default Cards
