@@ -1,12 +1,11 @@
-[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Netlify Status](https://api.netlify.com/api/v1/badges/fd0488e1-a9bd-4a33-8aee-d3b31954f1a9/deploy-status)](https://app.netlify.com/sites/rbhachu-robofriends/deploys)
+[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Netlify Status](https://api.netlify.com/api/v1/badges/b00288ea-1ce8-4f2e-86ef-6852ea32b143/deploy-status)](https://app.netlify.com/sites/rbhachu-robofriends-hooks/deploys)
 
 <h1 align="center">RoboFriends + Hooks</h1>
-<p>Update to the original [RoboFriends Repo](https://github.com/rbhachu/robofriends), with React Hooks.</p>
+
+Update to the original [RoboFriends Repo](https://github.com/rbhachu/robofriends) , with React Hooks.
 
 ## Instructions
-<p>
   - Clone Repo to your local machine.<br>
   - Next run `npm install` to install.<br>
   - Then run `npm start` to start the application.<br>
   - Finally, your default Browser should automatically open the application at the following link [http://localhost:3000](http://localhost:3000).
-</p>
